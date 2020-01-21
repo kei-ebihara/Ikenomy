@@ -1,0 +1,26 @@
+ja:
+  shops:
+    new:
+      name: お店登録
+    edit:
+      name: お店更新
+    form:
+      include_blank: ジャンルを選択して下さい
+    show:
+      adress: 住所
+      opentime: 開店時間
+      closetime: 閉店時間
+      regularholiday: 定休日
+      junre: ジャンル
+      description: お店の説明
+      hp: HP
+      edit: 編集
+      return: 戻る
+      delete: 削除
+      modal_name: お店削除
+      question_shop: "%{shop}を削除しますか？"
+      delete_action: 削除する
+      chancel: キャンセル
+      review_new: レビューを投稿する
+    index:
+      adress: 住所

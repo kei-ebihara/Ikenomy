@@ -1,0 +1,41 @@
+<%= form_with model: shop, local: true do |form| %>
+  <%= render "shared/errors", obj: shop %>
+  <div class="form-group">
+    <%= form.label :name %><br>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :new_image %><br>
+    <%= form.file_field :new_image, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :adress %><br>
+    <%= form.text_field :adress, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :opentime %><br>
+    <%= form.text_field :opentime, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :closetime %><br>
+    <%= form.text_field :closetime, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :regularholiday %><br>
+    <%= form.text_field :regularholiday, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :junre_id %>
+    <%= form.collection_select :junre_id, Junre.all, :id, :name , { include_blank: t(".include_blank") },  { class: "form-control" } %>
+  </div>
+  <div class="form-group">
+    <%= form.label :description %><br>
+    <%= form.text_area :description, rows: 10, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :hp %><br>
+    <%= form.text_field :hp, class: "form-control" %>
+  </div>
+
+  <%= form.submit class: "btn btn-primary" %>
+<% end %>
